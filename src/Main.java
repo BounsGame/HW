@@ -11,12 +11,12 @@ public class Main {
             System.out.println("если возраст человека равен " + age + ", то он не достиг совершеннолетия, и нужно немного подождать");
         }
         // 2 задание
-        int temperatur = 10;
-        if (temperatur <= 5) {
-            System.out.println("на улице " + temperatur + " градусов. нужно надеть шапку");
+        int temperature = 10;
+        if (temperature <= 5) {
+            System.out.println("на улице " + temperature + " градусов. нужно надеть шапку");
         }
         else {
-            System.out.println("на улице " + temperatur + " градусов. можно идти без шапки");
+            System.out.println("на улице " + temperature + " градусов. можно идти без шапки");
         }
         //3 задание
         int speed = 60;
@@ -44,11 +44,11 @@ public class Main {
             }
         }
         //5 задание
-        if (age < 5){
+        if (age <= 5){
             System.out.println("Если возраст ребёнка равен " + age + " то ему нельзя кататься на атракционе");
         }
         else {
-            if (age < 14){
+            if (age <= 14){
                 System.out.println("Если возраст ребёнка равен " + age + " то ему можно кататься на атракционе в сопровождении взрослого");
             }
             else {
