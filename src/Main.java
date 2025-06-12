@@ -3,72 +3,85 @@
 public class Main {
     public static void main(String[] args) {
         // 1 задание
-        byte a = 120;
-        short b = 32000;
-        int c = 2000000000;
-        long d = 900000000000L;
-        float e = 6.21f;
-        double f = 308.308f;
-        System.out.println("начение перменной с типом byte равно " + a);
-        System.out.println("начение перменной с типом short равно " + b);
-        System.out.println("начение перменной с типом int равно " + c);
-        System.out.println("начение перменной с типом long равно " + d);
-        System.out.println("начение перменной с типом float равно " + e);
-        System.out.println("начение перменной с типом double равно " + f);
-        //2 задание
-        float first = 27.12f;
-        long second = 987678965549L;
-        float third = 2.786f;
-        short four = 569;
-        short five = -159;
-        short six = 27897;
-        byte seven = 67;
+        int age = 20;
+        if (age >= 18) {
+            System.out.println("если возраст человека равен " + age + ", то он совершенно летний");
+        }
+        else {
+            System.out.println("если возраст человека равен " + age + ", то он не достиг совершеннолетия, и нужно немного подождать");
+        }
+        // 2 задание
+        int temperatur = 10;
+        if (temperatur <= 5) {
+            System.out.println("на улице " + temperatur + " градусов. нужно надеть шапку");
+        }
+        else {
+            System.out.println("на улице " + temperatur + " градусов. можно идти без шапки");
+        }
         //3 задание
-        byte luda = 23;
-        byte anna = 27;
-        byte kata = 30;
-        short list = 480;
-        float listForStudent;
-        listForStudent = list/(luda+anna+kata);
-        System.out.println("каждому ученику достанеться по " + listForStudent + " листов");
+        int speed = 60;
+        if (speed > 60) {
+            System.out.println("если скорость " + speed + ", то придёться заплатить штраф");
+        }
+        else {
+            System.out.println("если скорость " + speed + ", то можно ездить спокойно");
+        }
         //4 задание
-        byte bottlePer2Minute = 16;
-        int bottlePer20Minute = bottlePer2Minute * 10;
-        int bottlePerSutki = bottlePer2Minute * 720;
-        int bottlePer3Sutki = bottlePer2Minute * 2160;
-        long bottlePerMonth = bottlePer2Minute * 21600;
-        System.out.println("за 20 минут машина произвела " + bottlePer20Minute + " бутылок");
-        System.out.println("за сутки машина произвела " + bottlePerSutki + " бутылок");
-        System.out.println("за 3 суток машина произвела " + bottlePer3Sutki + " бутылок");
-        System.out.println("за месяц машина произвела " + bottlePerMonth + " бутылок");
-        //5 задние
-        byte allBanki = 120;
-        byte brownBanki = 4;
-        byte whiteBanki = 2;
-        int clas = allBanki/(brownBanki+whiteBanki);
-        System.out.println("в школу где " + clas + " классов. нужно "+ clas * whiteBanki + " банок белой краски и "+ clas * brownBanki + " коричневой краски");
+        if (age <= 6) {
+            System.out.println("Если возраст человека равен " + age + " то ему нужно ходить в детский сад");
+        }
+        else {
+            if (age <= 17) {
+                System.out.println("Если возраст человека равен " + age + " то ему нужно ходить в школу");
+            }
+            else {
+                if(age <= 24) {
+                    System.out.println("Если возраст человека равен " + age + " то его место в университете");
+                }
+                else {
+                    System.out.println("Если возраст человека равен " + age + " то ему пара ходить на работу");
+                }
+            }
+        }
+        //5 задание
+        if (age < 5){
+            System.out.println("Если возраст ребёнка равен " + age + " то ему нельзя кататься на атракционе");
+        }
+        else {
+            if (age < 14){
+                System.out.println("Если возраст ребёнка равен " + age + " то ему можно кататься на атракционе в сопровождении взрослого");
+            }
+            else {
+                System.out.println("Если возраст ребёнка равен " + age + " то ему можно кататься на атракционе без сопровождения взрослого");
+            }
+        }
         //6 задание
-        byte banan = 5;
-        int milk = 200;
-        byte icecream = 2;
-        byte egg = 4;
-        double weight = banan * 80 + milk * 1.05 + icecream * 100 + egg * 70;
-        double weightInKg = weight / 1000;
-        System.out.println("вес напитка в граммах " + weight + " и в килограммах " + weightInKg);
+        int people = 100;
+        if (people < 60) {
+            System.out.println("В вагоне есть " + (60 - people) + " свободных сидячих мест");
+        }
+        else {
+            if (people < 102) {
+                System.out.println("В вагоне есть " + (102 - people) + " свободных стоячих мест");
+            }
+            else {
+                System.out.println("В вагоне нет мест");
+            }
+        }
         //7 задание
-        int fallWeight = 7000;
-        int slow = fallWeight / 250;
-        int fast = fallWeight / 500;
-        System.out.println("если спорцмен будет худеть по 250гр в день, то у него уйдёт  " + slow + " дней. А если по 500, то " + fast + " дней, в среднем можно похудеть за " + (fast + slow)/2 + " день");
-        //8 задание
-        int masha = 67760;
-        int denis = 83690;
-        int cristina = 76230;
-        int newMasha = (int) (masha * 1.10);
-        int newDenis = (int) (denis * 1.10);
-        int newCristina = (int) (cristina * 1.10);
-        System.out.println("маша теперь получает " + newMasha + " рублей её доход вырос на " + (newMasha - masha) + " рублей");
-        System.out.println("денис теперь получает " + newDenis + " рублей его доход вырос на " + (newDenis - denis) + " рублей");
-        System.out.println("кристина теперь получает " + newCristina + " рублей её доход вырос на " + (newCristina - cristina) + " рублей");
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (one > two && one > three) {
+            System.out.println("Число " + one + " самое большое");
+        }
+        else {
+            if (two > three){
+                System.out.println("Число " + two + " самое большое");
+            }
+            else {
+                System.out.println("Число " + three + " самое большое");
+            }
+        }
     }
 }
