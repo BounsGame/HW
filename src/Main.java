@@ -61,12 +61,16 @@ public class Main {
         int day = 1;
         for (i = 1; i <= 31; i++) {
             if (day == 8) day = 1;
-            if (day == 5) System.out.println("Сегодня пятница, " + i + " -е число.");
+            if (day == 5) System.out.println("Сегодня пятница, " + i + " -е число. Необходимо подготовить отчет");
             day += 1;
         }
         //8 задание
-        for (i = 0; i < 2200; i += 79) {
-            if (i >= 1825 && i <= 2125) System.out.println(i);
+        int actualYear = 2025;
+        int periodBegin = actualYear - 200;
+        int periodEnd = actualYear + 100;
+        while (periodBegin < periodEnd) {
+            if (periodBegin % 79 == 0) System.out.println(periodBegin);
+            periodBegin += 1;
         }
     }
 }
