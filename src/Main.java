@@ -3,62 +3,70 @@
 public class Main {
     public static void main(String[] args) {
         // 1 задание
-        for (int i = 1; i <= 10; i++) {
+        int bank = 0;
+        int i = 0;
+        while (bank <= 2459000) {
+            i++;
+            bank += 15000;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + bank + " рублей");
+        }
+        //2 задание
+        i = 0;
+        while (i < 10) {
+            i++;
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        for (; i >= 1; i--) {
             System.out.print(i + " ");
         }
         //для красоты
-        System.out.println("");
-        //2 задание
-        for (int i = 10; i >= 1; i--) {
-            System.out.print(i + " ");
-        }
-        //снова для красоты
-        System.out.println("");
+        System.out.println();
         //3 задание
-        for (int i = 0; i <= 17; i = i + 2) {
-            System.out.print(i + " ");
+        int population = 12000000;
+        int change = 17 - 8;
+        for (i = 1; i <= 10; i++) {
+            population += (population / 1000 * change);
+            System.out.println("Год " + i + " численность населения составляет " + population);
         }
-        //снова для красоты
-        System.out.println("");
         //4 задание
-        for (int i = 10; i >= -10; i--) {
-            System.out.print(i + " ");
+        bank = 15000;
+        i = 0;
+        while (bank <= 12000000) {
+            i++;
+            bank *= 1.07;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + bank + " рублей");
         }
-        //снова для красоты
-        System.out.println("");
         //5 задание
-        for (int year = 1904; year <= 2096; year = year + 4) {
-            System.out.print(year + " ");
+        bank = 15000;
+        i = 0;
+        while (bank <= 12000000) {
+            i++;
+            bank *= 1.07;
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " сумма накоплений равна " + bank + " рублей");
+            }
         }
-        //снова для красоты
-        System.out.println("");
         //6 задание
-        for (int i = 7; i <= 98; i = i + 7) {
-            System.out.print(i + " ");
+        bank = 15000;
+        i = 0;
+        while (i <= 108) {
+            i++;
+            bank *= 1.07;
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " сумма накоплений равна " + bank + " рублей");
+            }
         }
-        //снова для красоты
-        System.out.println("");
         //7 задание
-        for (int i = 1; i <= 512; i = i * 2) {
-            System.out.print(i + " ");
+        int day = 1;
+        for (i = 1; i <= 31; i++) {
+            if (day == 8) day = 1;
+            if (day == 5) System.out.println("Сегодня пятница, " + i + " -е число.");
+            day += 1;
         }
-        //снова для красоты
-        System.out.println("");
         //8 задание
-        int bank = 0;
-        for (int i = 1; i <= 12; i++) {
-            bank = bank + 29000;
-            System.out.println("месяц " + i + " сумма накоплений равна " + bank + " рублей");
-        }
-        //9 задание
-        bank = 0;
-        for (int i = 1; i <= 12; i++) {
-            bank = (int) (bank * 1.01) + 29000;
-            System.out.println("месяц " + i + " сумма накоплений равна " + bank + " рублей");
-        }
-        //10 задание
-        for (int i = 1; i <= 10; i = i + 1) {
-            System.out.println("2*" + i + "=" + 2 * i);
+        for (i = 0; i < 2200; i += 79) {
+            if (i >= 1825 && i <= 2125) System.out.println(i);
         }
     }
 }
