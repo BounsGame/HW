@@ -45,7 +45,7 @@ public class Main {
         System.out.println();
         //4 задание
         for (int i = 0; i <= integer.length - 1; i++) {
-            if (i % 2 == 0) integer[i] += 1;
+            if (integer[i] % 2 != 0) integer[i] += 1;
         }
         System.out.println(Arrays.toString(integer));
     }
