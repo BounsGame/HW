@@ -8,10 +8,10 @@ public class Main {
     public static void main(String[] args) {
         // 1 задание
         int year = 2007;
-        leanYear(year);
+        checkLeanYear(year);
         //2 задание
         int clientOS = 1;
-        int clientDeviceYear = 1937;
+        int clientDeviceYear = 2020;
         printAppDownload(clientOS, clientDeviceYear);
         //3 задание
         int deliveryDistance = 27;
@@ -23,21 +23,22 @@ public class Main {
         }
     }
 
-    public static void leanYear(int year) {
+    public static void checkLeanYear(int year) {
         if ((year % 4) != 0 || year < 1584) {
             System.out.println(year + " год — невисокосный год");
         } else if ((year % 100) != 0 || (year % 400) == 0) {
             System.out.println(year + " год — високосный год");
+        } else {
+            System.out.println(year + " год — невисокосный год");
         }
     }
 
     public static void printAppDownload(int clientOS, int clientDeviceYear) {
-        int currentYear = LocalDate.now().getYear();
-        if (clientDeviceYear < currentYear && clientOS == 0) {
+        if (clientDeviceYear < 2015 && clientOS == 0) {
             System.out.println("установите облегчённую версию приложения для iOS по ссылке");
-        } else if (clientDeviceYear >= currentYear && clientOS == 0) {
+        } else if (clientDeviceYear >= 2015 && clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientDeviceYear < currentYear) {
+        } else if (clientDeviceYear < 2015) {
             System.out.println("установите облегчённую версию приложения для Android по ссылке");
         } else {
             System.out.println("Установите версию приложения для Android по ссылке");
