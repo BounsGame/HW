@@ -5,33 +5,16 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         // 1 задание
-        int[] budget = {15000, 10000, 12000, 25000, 18000};
-        int sum = 0;
-        for (int i : budget) {
-            sum += i;
-        }
-        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + " " + firstName + " " + middleName;
+        System.out.println("Ф.И.О. сотрудника — " + fullName);
         //2 задание
-        int max = budget[0];
-        int min = budget[0];
-        for (int i : budget) {
-            if (i < min) min = i;
-            if (i > max) max = i;
-        }
-        System.out.println("Минимальная сумма трат за неделю составила " + min + " рублей. Максимальная сумма трат за неделю составила " + max + " рублей");
+        System.out.println("Данные Ф.И.О. сотрудника для заполнения отчета — " + fullName.toUpperCase());
         //3 задание
-        float average = sum / budget.length;
-        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
-        //4 задание
-        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        char s;
-        for (int i = 0; i < reverseFullName.length / 2; i++) {
-            s = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
-            reverseFullName[reverseFullName.length - 1 - i] = s;
-        }
-        for (char i : reverseFullName) {
-            System.out.print(i);
-        }
+        fullName = "Иванов Семён Семёнович";
+        fullName = fullName.replace('ё', 'е');
+        System.out.println("Данные Ф.И.О. сотрудника — " + fullName);
     }
 }
