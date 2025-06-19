@@ -10,14 +10,14 @@ public class Main {
         String name = "Stiven";
         String surname = "King";
         int year = 1986;
-        String bookname = "It";
+        String bookname = "Оно";
         Author author1 = new Author(name, surname);
         Book book1 = new Book(bookname, year, author1);
         Author author2 = new Author("Robert", "Martin");
-        Book book2 = new Book("Clear code", 2025, author2);
-        System.out.println(book1.getBookName() + " " + book1.getYear() + " " + book1.author.getName() + " " + book1.author.getSurname());
-        System.out.println(book2.getBookName() + " " + book2.getYear() + " " + book2.author.getName() + " " + book2.author.getSurname());
+        Book book2 = new Book("Чистый код", 2025, author2);
+        System.out.println(book1);
+        System.out.println(book2);
         book1.setYear(2024);
-        System.out.println(book1.getBookName() + " " + book1.getYear() + " " + book1.author.getName() + " " + book1.author.getSurname());
+        System.out.println(book1);
     }
 }
