@@ -74,7 +74,7 @@ public class Employee {
         return nextId;
     }
     //всё что в коментарии это повышеный уровень
-
+/*
     public int sumSalary(Employee[] rabi) {
         int sum = 0;
         for (int i = 0; i < nextId - 1; i++) {
@@ -223,6 +223,6 @@ public class Employee {
                 System.out.println("у работника " + rabi[i] + " зарплата выше " + salaryMin);
             }
         }
-    }
+    }*/
 }
 
